@@ -1,0 +1,41 @@
+h1 {
+    color: rgb(33, 13, 145);
+}
+
+body {
+    background-color: rgb(243, 165, 76);
+}
+
+a {
+    font-size: larger;
+    color: darkmagenta;
+}
+
+.header3 {
+    font-family: 'SFNS Display Bold';
+}
+
+.listing {
+	font-family: 'Dewberry Bold Italic';
+}
+
+
+@font-face {
+	font-family: 'SFNS Display Bold';
+	src: url('font/fonts/sfns_display_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('font/fonts/sfns_display_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('font/fonts/sfns_display_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('font/fonts/sfns_display_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('font/fonts/sfns_display_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('font/fonts/sfns_display_bold.svg#sfns_display_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Dewberry Bold Italic';
+	src: url('font/fonts/dewberry_bold_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('font/fonts/dewberry_bold_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('font/fonts/dewberry_bold_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('font/fonts/dewberry_bold_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('font/fonts/dewberry_bold_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('font/fonts/dewberry_bold_italic.svg#dewberry_bold_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
