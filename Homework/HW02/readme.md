@@ -1,8 +1,8 @@
 Задание - Создать сайт (html-документ с названием index.html)
 
-[Код](index.html)  
+[HTML](index.html)  
 [Валидация](validation.png)  
-[сайт](http://127.0.0.1:5500/Homework/HW02/index.html)  
+[Cайт-скриншот]()  
 
 
 
