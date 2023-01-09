@@ -9,14 +9,14 @@
     <p>Это обычный HTML документ</p>
     <script language="JavaScript">
 
-        function sum(a,b) {
-            return a+b;
+        let userName = 'Алевтина';
+        function showMessage() {
+            let message = 'Привет, ' + userName;
+            alert(message);
         }
+        showMessage(); // Привет, Алевтина
 
-        let a=parseInt(prompt("Введите число a"));
-        let b=parseInt(prompt("Введите число b"));
-        alert (sum(a,b));
-        
+
     </script>
 
     <p>Выходим обратно в HTML</p>
