@@ -1,5 +1,11 @@
 h1 {
-    color: rgb(33, 13, 145);
+    font-family: 'SFNS Display Bold';
+	color: rgb(33, 13, 145);
+}
+
+h2 {
+    font-family: 'SFNS Display Bold';
+	color: rgb(33, 13, 145);
 }
 
 body {
@@ -7,12 +13,18 @@ body {
 }
 
 a {
-    font-size: larger;
+    font-family: 'SFNS Display Bold';
+	font-size: larger;
     color: darkmagenta;
 }
 
-.header3 {
+h3 {
     font-family: 'SFNS Display Bold';
+}
+
+p {
+	font-family: 'Lato Italic';
+	font-size: large;
 }
 
 .listing {
@@ -38,4 +50,14 @@ a {
 		url('font/fonts/dewberry_bold_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('font/fonts/dewberry_bold_italic.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('font/fonts/dewberry_bold_italic.svg#dewberry_bold_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Lato Italic';
+	src: url('font/fonts/lato_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('font/fonts/lato_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('font/fonts/lato_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('font/fonts/lato_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('font/fonts/lato_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('font/fonts/lato_italic.svg#lato_italic') format('svg'); /* Chrome < 4, Legacy iOS */
 }

@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Lato Italic';
+	src: url('../fonts/lato_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/lato_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/lato_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/lato_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/lato_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/lato_italic.svg#lato_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}

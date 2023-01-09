@@ -1,8 +1,9 @@
 Задание - Создать сайт (html-документ с названием index.html)
 
 [HTML](index.html)  
+[CSS](style.css)  
 [Валидация](validation.png)  
-[Cайт-скриншот]()  
+[Cайт-скриншот](SVO.jpeg)  
 
 
 
