@@ -1,31 +1,36 @@
 h1 {
-    font-family: 'SFNS Display Bold';
+	font-family: 'SFNS Display Bold';
 	color: rgb(33, 13, 145);
 }
 
 h2 {
-    font-family: 'SFNS Display Bold';
+	font-family: 'SFNS Display Bold';
 	color: rgb(33, 13, 145);
 }
 
 body {
-    background-color: rgb(243, 165, 76);
+	background-color: rgb(243, 165, 76);
 }
 
 a {
-    font-family: 'SFNS Display Bold';
+	font-family: 'SFNS Display Bold';
 	font-size: larger;
-    color: darkmagenta;
+	color: darkmagenta;
 }
 
 h3 {
-    font-family: 'SFNS Display Bold';
+	font-family: 'SFNS Display Bold';
 }
 
 p {
 	font-family: 'Lato Italic';
 	font-size: large;
 }
+
+img {
+	width: 500px;
+}
+
 
 .listing {
 	font-family: 'Dewberry Bold Italic';
@@ -34,30 +39,48 @@ p {
 
 @font-face {
 	font-family: 'SFNS Display Bold';
-	src: url('font/fonts/sfns_display_bold.eot'); /* IE 9 Compatibility Mode */
-	src: url('font/fonts/sfns_display_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('font/fonts/sfns_display_bold.woff2') format('woff2'), /* Super Modern Browsers */
-		url('font/fonts/sfns_display_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('font/fonts/sfns_display_bold.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('font/fonts/sfns_display_bold.svg#sfns_display_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+	src: url('font/fonts/sfns_display_bold.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('font/fonts/sfns_display_bold.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('font/fonts/sfns_display_bold.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('font/fonts/sfns_display_bold.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('font/fonts/sfns_display_bold.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('font/fonts/sfns_display_bold.svg#sfns_display_bold') format('svg');
+	/* Chrome < 4, Legacy iOS */
 }
 
 @font-face {
 	font-family: 'Dewberry Bold Italic';
-	src: url('font/fonts/dewberry_bold_italic.eot'); /* IE 9 Compatibility Mode */
-	src: url('font/fonts/dewberry_bold_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('font/fonts/dewberry_bold_italic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('font/fonts/dewberry_bold_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('font/fonts/dewberry_bold_italic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('font/fonts/dewberry_bold_italic.svg#dewberry_bold_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+	src: url('font/fonts/dewberry_bold_italic.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('font/fonts/dewberry_bold_italic.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('font/fonts/dewberry_bold_italic.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('font/fonts/dewberry_bold_italic.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('font/fonts/dewberry_bold_italic.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('font/fonts/dewberry_bold_italic.svg#dewberry_bold_italic') format('svg');
+	/* Chrome < 4, Legacy iOS */
 }
 
 @font-face {
 	font-family: 'Lato Italic';
-	src: url('font/fonts/lato_italic.eot'); /* IE 9 Compatibility Mode */
-	src: url('font/fonts/lato_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('font/fonts/lato_italic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('font/fonts/lato_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('font/fonts/lato_italic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('font/fonts/lato_italic.svg#lato_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+	src: url('font/fonts/lato_italic.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('font/fonts/lato_italic.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('font/fonts/lato_italic.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('font/fonts/lato_italic.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('font/fonts/lato_italic.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('font/fonts/lato_italic.svg#lato_italic') format('svg');
+	/* Chrome < 4, Legacy iOS */
 }
