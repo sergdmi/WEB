@@ -1,5 +1,3 @@
-
-
 const tempc = Number.parseFloat(prompt("Введите температуру в градусах Цельсия: "));
 
 alert(`Цельсий = ${tempc} , Фаренгейт = ${temperatureCtoF(tempc)}`)
