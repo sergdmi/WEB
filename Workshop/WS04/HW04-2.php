@@ -142,7 +142,7 @@ $experience = [
                         <?php for ($i = 0; $i < count($experience); $i++): ?>
                             <h5 class="w3-opacity"><b><?php echo $experience[$i]['title']; ?></b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
-                                <?php echo $experience[$i]['startdate']; ?> - <span><?php echo $experience[$i]['enddate']; ?></span>
+                                <?php echo $experience[$i]['startdate']; ?> - <?php echo $experience[$i]['enddate']; ?>
                             </h6>
                             <p>
                                 <?php echo $experience[$i]['description']; ?>

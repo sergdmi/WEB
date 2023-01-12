@@ -1,5 +1,5 @@
 <?php
-$name = 'Иннокентий';
+$name = 'Сергей';
 $city = 'Москва';
 $profession = 'Дизайнер';
 $email = 'email@email.com';
@@ -21,6 +21,33 @@ $skills = [
     [
         'name' => 'Java Script, PHP',
         'percent' => 50,
+    ],
+];
+
+$experience = [
+    [
+        'title' => 'Front End Разработчик',
+        'startdate' => 'Январь-2015',
+        'enddate' => 'По настоящее время',
+        'description' => 'Создание пользовательского интерфейса сайтов, приложений и ПО. Компания А.',
+    ],
+    [
+        'title' => 'Web Разработчик',
+        'startdate' => 'Март-2012',
+        'enddate' => 'Декабрь-2014',
+        'description' => 'Разработка и поддержка веб-приложений: сайтов, сервисов, различных платформ.Компания Б.',
+    ],
+    [
+        'title' => 'Графический дизайнер',
+        'startdate' => 'Июнь-2010',
+        'enddate' => 'Март-2012',
+        'description' => 'Разработка проектов художественного оформления, эскизы и визуализация концепций дизайна Web-интерфейсов. Компания В.',
+    ],
+    [
+        'title' => 'HTML-верстальщик ',
+        'startdate' => 'Июнь-2010',
+        'enddate' => 'Февраль - 2012',
+        'description' => 'Создание HTML-шаблонов для сайтов. Компания С.',
     ],
 ];
 
@@ -89,15 +116,15 @@ $skills = [
                             <?php echo $phone; ?>
                         </p>
                         <hr>
-a
+
                         <p class="w3-large"><b><i
                                     class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
-                        <?php for ($i = 0; $i < count($skills); $i++) : ?>
-                            <p><?php echo $skills[$i]['name']; ?></p>
+                        <?php for ($i = 0; $i < count($skills); $i++): ?>
+                            <p><?php echo $skills[$i]["name"]; ?></p>
                             <div class="w3-light-grey w3-round-xlarge w3-small">
                                 <div class="w3-container w3-center w3-round-xlarge w3-teal"
-                                    style="width:<?php echo $skills[$i]['percent']; ?>%">
-                                    <?php echo $skills[$i]['percent']; ?>
+                                    style="width:<?php echo $skills[$i]["percent"]; ?>%">
+                                    <?php echo $skills[$i]["percent"]; ?>
                                 </div>
                             </div>
                         <?php endfor; ?>
@@ -131,30 +158,36 @@ a
                     <h2 class="w3-text-grey w3-padding-16"><i
                             class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Front End Developer </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span
-                                class="w3-tag w3-teal w3-round">Current</span></h6>
-                        <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est
-                            reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
-                            iste.</p>
+                        <h5 class="w3-opacity"><b>
+                                <?php echo $experience[0]['title']; ?>
+                            </b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[0]['startdate']; ?> - <span class="w3-tag w3-teal w3-round">
+                                <?php echo $experience[0]['enddate']; ?>
+                            </span></h6>
+                        <p><?php echo $experience[0]['description']; ?></p>
                         <hr>
                     </div>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014
-                        </h6>
-                        <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est
-                            reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
-                            iste.</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012
-                        </h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+                        <?php for ($i = 0; $i < count($experience); $i++): ?>
+                            <h5 class="w3-opacity"><b><?php echo $experience[$i]['title']; ?></b></h5>
+                            <?php if ($i = 0) { 
+                                <h6 class="w3-text-teal"><i
+                                        class="fa fa-calendar fa-fw w3-margin-right"></i>
+                                    <?php echo $experience[$i]['startdate']; ?> - <span class="w3-tag w3-teal w3-round">
+                                        <?php echo $experience[$i]['enddate']; ?></span></h6> 
+                                    }                               
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                                    <?php echo $experience[$i]['startdate']; ?> - <?php echo $experience[$i]['enddate']; ?>
+                                </h6>
+                            ?>
+                            <p>
+                                <?php echo $experience[$i]['description']; ?>
+                            </p>
+                            <hr>
+                        <?php endfor; ?>
                     </div>
                 </div>
+
 
                 <div class="w3-container w3-card w3-white">
                     <h2 class="w3-text-grey w3-padding-16"><i

@@ -1,5 +1,5 @@
 <?php
-$name = 'Иннокентий';
+$name = 'Сергей';
 $city = 'Москва';
 $profession = 'Дизайнер';
 $email = 'email@email.com';
@@ -119,7 +119,7 @@ $experience = [
 
                         <p class="w3-large"><b><i
                                     class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
-                        <?php for ($i = 0; $i < count($skills); $i++): ?>
+                        <?php for ($i = 0; $i < count($skills); $i++) : ?>
                             <p><?php echo $skills[$i]["name"]; ?></p>
                             <div class="w3-light-grey w3-round-xlarge w3-small">
                                 <div class="w3-container w3-center w3-round-xlarge w3-teal"
@@ -154,49 +154,33 @@ $experience = [
             <!-- Right Column -->
             <div class="w3-twothird">
 
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
                     <h2 class="w3-text-grey w3-padding-16"><i
                             class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
-                    <div class="w3-container">
+                            <div class="w3-container">
                         <h5 class="w3-opacity"><b>
                                 <?php echo $experience[0]['title']; ?>
                             </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[0]['stardate']; ?> - <span class="w3-tag w3-teal w3-round">
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[0]['startdate']; ?> - <span class="w3-tag w3-teal w3-round">
                                 <?php echo $experience[0]['enddate']; ?>
                             </span></h6>
                         <p><?php echo $experience[0]['description']; ?></p>
                         <hr>
                     </div>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>
-                                <?php echo $experience[1]['title']; ?>
-                            </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[1]['stardate']; ?> - <span class="w3-tag w3-teal w3-round">
-                                <?php echo $experience[1]['enddate']; ?>
-                            </span></h6>
-                        <p><?php echo $experience[1]['description']; ?></p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>
-                                <?php echo $experience[2]['title']; ?>
-                            </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[2]['stardate']; ?> - <span class="w3-tag w3-teal w3-round">
-                                <?php echo $experience[2]['enddate']; ?>
-                            </span></h6>
-                        <p><?php echo $experience[2]['description']; ?></p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>
-                                <?php echo $experience[3]['title']; ?>
-                            </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[3]['stardate']; ?> - <span class="w3-tag w3-teal w3-round">
-                                <?php echo $experience[3]['enddate']; ?>
-                            </span></h6>
-                        <p><?php echo $experience[3]['description']; ?></p><br>                       
+                        <?php for ($i = 1; $i < count($experience); $i++): ?>
+                            <h5 class="w3-opacity"><b><?php echo $experience[$i]['title']; ?></b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                                <?php echo $experience[$i]['startdate']; ?> - <?php echo $experience[$i]['enddate']; ?>
+                            </h6>
+                            <p>
+                                <?php echo $experience[$i]['description']; ?>
+                            </p>
+                            <hr>
+                        <?php endfor; ?>
                     </div>
                 </div>
+                
 
                 <div class="w3-container w3-card w3-white">
                     <h2 class="w3-text-grey w3-padding-16"><i
