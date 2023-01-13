@@ -3,9 +3,8 @@ const tempc = Number.parseFloat(prompt("Введите температуру в
 alert(`Цельсий = ${tempc} , Фаренгейт = ${temperatureCtoF(tempc).toFixed(2)}`);
 
 function temperatureCtoF(tempc) {
-    const tempf = (9 / 5) * tempc + 32;
-    return tempf;
-}
+    return (9 / 5) * tempc + 32;
+    }
 
 // Округление:
 // Math.round(tempf*100) / 100
