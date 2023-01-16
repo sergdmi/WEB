@@ -171,19 +171,22 @@ $experience = [
                         <?php for ($i = 1; $i < count($experience); $i++): ?>
                             <div class="w3-container">
                                 <h5 class="w3-opacity"><b>
-                                        <?php echo $experience[$i]['title']; ?>
+                                        <?= $experience[$i]['title']; ?>
                                     </b></h5>
                                 <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
-                                    <?php echo $experience[$i]['startdate']; ?> - <?php echo $experience[$i]['enddate']; ?>
+                                    <?=$experience[$i]['startdate']; ?> -
+                                    <?php if ($i == 0): ?>
+                                        <span class="w3-tag w3-teal w3-round">
+                                        <?=$experience[$i]['enddate']; ?>
+                                        </span>>
+                                    <?php else: ?>
+                                    <?=$experience[$i]['enddate'];?>
+                                    <?php endif; ?>
                                 </h6>
-                                <p>
-                                    <?php echo $experience[$i]['description']; ?>
-                                </p>
+                                <p><?=$experience[$i]['description'];?> </p>
                                 <hr>
                             </div>
-                        <?php endfor; ?>
-                        
-                
+                        <?php endfor; ?>                                      
                 
 
                 <div class="w3-container w3-card w3-white">
